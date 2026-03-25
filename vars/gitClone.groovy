@@ -2,7 +2,7 @@ def call(String repoUrl) {
   echo "Cloning repository: ${repoUrl}"
 
   dir('/mnt') {
-    // sh 'rm -rf /mnt/hello-world-2'
+     sh 'rm -rf /mnt/hello-world-2'
      sh "git clone ${repoUrl}"
 
    }
