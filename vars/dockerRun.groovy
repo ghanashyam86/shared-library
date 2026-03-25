@@ -3,7 +3,7 @@ def call(String containerName, String imageName, String portMapping) {
     echo "Running docker container: ${containerName}"
 
      // stop and remove existing container
-     sh "docker rm -rf ${containerName}" || true
+     sh "docker rm -rf ${containerName} || true"
 
      //run new container
      sh "docker run -itd -p ${portMapping} --name ${containerName} ${imageName}"
