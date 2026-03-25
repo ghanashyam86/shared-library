@@ -1,4 +1,4 @@
-def call(string repoUrl) {
+def call(String repoUrl) {
   echo "Cloning repository: ${repoUrl}"
 
   dir('/mnt') {
