@@ -1,4 +1,4 @@
-def call(string projectPath, string imageName)
+def call(String projectPath, String imageName)
 
    echo "Building Docker Image: ${imageName}"
 
