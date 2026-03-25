@@ -1,4 +1,4 @@
-def call(string projectPath) {
+def call(String projectPath) {
    echo "Running mavn build in: ${projectPath}}"
 
    dir(projectPath) {
