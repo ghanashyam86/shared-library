@@ -1,4 +1,4 @@
-def call(string containerName, string imageName, string portMapping) {
+def call(String containerName, String imageName, String portMapping) {
 
     echo "Running docker container: ${containerName}"
 
