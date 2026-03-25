@@ -4,7 +4,7 @@ def call(String projectPath, String imageName)
 
   dir(projectPath) {
  
-     sh "docker build -t ${imageName}"
+     sh "docker build -t ${imageName} ."
    }
 }
 
