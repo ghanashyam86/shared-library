@@ -1,14 +1,4 @@
 
-def call(String repoUrl) {
-  echo "cloning repository: ${repoUrl}"
-
-  dir('/mnt/') {
-     sh 'rm -rf /mnt/hello-world-2'
-     sh "git clone ${repoUrl}"
-}
-}
-
-
 def call(Map args) {
    if (!args.repo) {
       error "Missing required parameter: repo"
@@ -23,5 +13,6 @@ def call(Map args) {
      dir(target) {
        sh "rm -rf *"
        sh "git clone -b ${branch} ${args.repo} ."
+    }
   }
 }
