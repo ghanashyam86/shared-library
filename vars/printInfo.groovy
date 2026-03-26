@@ -1,6 +1,8 @@
 
 def call(Map args) {
-  echo "Name: ${args.name}"
-  echo "Environment: ${args.env}"
-}
+  def userName = args.name ?: "Guest"
+  def environment = args.env ?: "qa"
 
+  echo "User: ${userName}"
+  echo "Environment: ${environment}"
+}
